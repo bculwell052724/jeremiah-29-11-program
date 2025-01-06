@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremiah 29:11 Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #4caf50;
+        }
+
+        .goal-form {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .goal-form input, .goal-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .goal-form button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .goal-form button:hover {
+            background-color: #45a049;
+        }
+
+        .progress {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .progress-bar {
+            background-color: #4caf50;
+            height: 20px;
+            width: 70%;
+            margin: auto;
+            border-radius: 10px;
+            color: white;
+            line-height: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jeremiah 29:11 Program</h1>
+        <p>God’s way to help your confidence</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Set Your Goal</h2>
+            <form class="goal-form">
+                <input type="text" id="goal" placeholder="Enter your goal for the week" required>
+                <input type="text" id="category" placeholder="Enter goal category (e.g., Academic, Behavioral)" required>
+                <button type="button" onclick="submitGoal()">Submit Goal</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Your Progress</h2>
+            <div class="progress">
+                <div class="progress-bar">70% Completed</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Inspirational Verse</h2>
+            <blockquote>
+                “For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope.” – Jeremiah 29:11
+            </blockquote>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Jeremiah 29:11 Program
+    </footer>
+
+    <script>
+        function submitGoal() {
+            const goal = document.getElementById('goal').value;
+            const category = document.getElementById('category').value;
+            if (goal && category) {
+                alert(`Goal submitted: \nGoal: ${goal} \nCategory: ${category}`);
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script>
+</body>
+</html>
